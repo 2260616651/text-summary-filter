@@ -1,6 +1,6 @@
 # 终稿格式模板（output-template）
 
-> 定位：doc-extract-filter **标准总结主流程**收尾时的终稿落盘骨架。所有终稿合并 agent 共用同一套模板，guide/tools-ops.md「交付与清理」节只写了命名 / 格式 / 清理顺序，未给骨架，本文件补齐。
+> 定位：text-summary-filter **标准总结主流程**收尾时的终稿落盘骨架。所有终稿合并 agent 共用同一套模板，guide/tools-ops.md「交付与清理」节只写了命名 / 格式 / 清理顺序，未给骨架，本文件补齐。
 > 配套：`markup-protocol.md`（标记协议与 agent 铁律）、`troubleshooting.md`（来源定位技巧）、`three-pass-screening.md`（按行筛选，另一条链）。
 > 红线：先落终稿并校验、再谈清理；原文零改写（默认保真手段，目标为信息不丢）、文档内信息只改位置不删；来源必须标明；文档外推论显式区分。
 > 本文只给可套用模板与硬约束，不复述实战对话、不堆理论。

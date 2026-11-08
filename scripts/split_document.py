@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 切分脚本
+text-summary-filter 切分脚本
 - 分析文档"自生专注力"，由文档自身特征推导块大小
 - 切成大小相等的块（吸附到句子自然边界，绝不切断行）
 - 默认 1-4kb 重叠（可按文档信息密度升降档），重叠区打 ⟦OVERLAP⟧ 标记
@@ -344,7 +344,7 @@ def analyze(text, sents_per_chunk=12):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="doc-extract-filter 切分脚本")
+    ap = argparse.ArgumentParser(description="text-summary-filter 切分脚本")
     ap.add_argument('file', nargs='?', default='-', help="输入文件，'-' 表示 stdin")
     ap.add_argument('--analyze', action='store_true', help="只做体量分析，不切分")
     ap.add_argument('--sents-per-chunk', type=int, default=12,

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """完整总结链前置工具：把逐块摘要「只追加」成单一总提取稿，并校验块覆盖。
 

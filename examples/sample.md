@@ -24,7 +24,7 @@
 
 # 附：本示例怎么用（入门）
 
-`sample.md` 是 doc-extract-filter 的**短样例源文档**，用于确认等宽切块、`⟦OVERLAP⟧` 重叠标记与自然边界吸附长什么样。
+`sample.md` 是 text-summary-filter 的**短样例源文档**，用于确认等宽切块、`⟦OVERLAP⟧` 重叠标记与自然边界吸附长什么样。
 真正的完整流程见 `SKILL.md` 的「0. 一句话启动」与 `references/quickstart.md`。
 
 ```bash

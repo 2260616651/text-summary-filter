@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 按行号零改写抽取渲染工具。
+text-summary-filter 按行号零改写抽取渲染工具。
 
 实战来源：render_doc.py。
 读 agent 的 JSON 行号清单 {"items":[{"line":N,"reason":"…","verdict":"…"}]}，
@@ -51,7 +51,7 @@ def strip_eol(b):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 按物理行号从母本逐字节抽取原文（零改写）生成 md",
+        description="text-summary-filter 按物理行号从母本逐字节抽取原文（零改写）生成 md",
         epilog=("示例： python render_from_lines.py --source 母本.txt --lines agent1.json "
                 "--out out.md --title '初判无关条目' --note '第1道' --note '宽松初筛'"))
     ap.add_argument('--source', required=True, help="母本文件（必填）")

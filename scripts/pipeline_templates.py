@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """判定基准与三道 agent 提示词的通用模板生成器。
 

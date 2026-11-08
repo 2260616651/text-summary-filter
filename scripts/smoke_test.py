@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """一句话启动链路冒烟测试：证明「触发 → 路由 → 4问参数 → 编排 → 交付」没被改坏。
 
@@ -58,7 +58,7 @@ def main() -> None:
         results.append((name, bool(ok), detail))
         print("  [%s] %-34s %s" % ("PASS" if ok else "FAIL", name, detail))
 
-    print("=== doc-extract-filter 一句话启动链路冒烟测试 ===")
+    print("=== text-summary-filter 一句话启动链路冒烟测试 ===")
     print("  工作目录:", wd, "\n")
 
     # 1 意图路由

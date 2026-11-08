@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """意图路由：把用户「一句话」映射成 run_pipeline.py init 的建议参数。
 
@@ -114,7 +114,7 @@ def route(text: str, source: str, workdir: str, volumes: int | None = None,
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="doc-extract-filter 一句话意图路由")
+    ap = argparse.ArgumentParser(description="text-summary-filter 一句话意图路由")
     ap.add_argument("--text", required=True, help="用户原话")
     ap.add_argument("--source", default="<SOURCE>", help="源文档路径")
     ap.add_argument("--workdir", default="<WORKDIR>", help="工作目录")

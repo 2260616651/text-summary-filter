@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 按行二进制等分切卷工具。
+text-summary-filter 按行二进制等分切卷工具。
 
 实战来源：split_and_map.py。
 - 全程二进制：rb 读 + bytes.splitlines(keepends=True) + wb 写，杜绝 CRLF 翻译。
@@ -27,7 +27,7 @@ def read_bytes(path):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 按行二进制等分切卷（切点在两行之间，拼接逐字节硬校验）",
+        description="text-summary-filter 按行二进制等分切卷（切点在两行之间，拼接逐字节硬校验）",
         epilog=("输出：<前缀>1.txt ... <前缀>N.txt\n"
                 "示例： python split_by_lines.py --source 母本.txt --volumes 7 --out-prefix 卷_ --map 映射.md"))
     ap.add_argument('--source', required=True, help="待切分文件（必填）")

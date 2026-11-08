@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 三道筛选协议硬校验工具。
+text-summary-filter 三道筛选协议硬校验工具。
 
 实战来源：finalize_filter.py。
 三道协议：
@@ -93,7 +93,7 @@ def reasons_ok(items):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 三道筛选协议硬校验（集合互斥/覆盖/定稿逐字节）",
+        description="text-summary-filter 三道筛选协议硬校验（集合互斥/覆盖/定稿逐字节）",
         epilog=("示例： python verify_three_pass.py --a agent1.json --b agent2.json "
                 "--c agent3.json --source 母本.txt --final 定稿.txt"))
     ap.add_argument('--a', required=True, help="第1道 agent JSON（初判全集）")

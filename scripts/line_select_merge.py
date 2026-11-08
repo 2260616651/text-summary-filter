@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter · 程序化行选择合并（零改写 / 零硬数据丢失）。
+text-summary-filter · 程序化行选择合并（零改写 / 零硬数据丢失）。
 
 实现来源：早期合并脚本（实测硬数据零丢失）。
 核心：每一行要么「原样保留」，要么「整行丢弃」，绝不改写任何字符。
@@ -553,7 +553,7 @@ def main():
                   file=sys.stderr)
 
     ap = argparse.ArgumentParser(
-        description='doc-extract-filter · 程序化行选择合并：整行原样保留 / 整行丢弃，零改写、零硬数据丢失',
+        description='text-summary-filter · 程序化行选择合并：整行原样保留 / 整行丢弃，零改写、零硬数据丢失',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             '示例：\n'

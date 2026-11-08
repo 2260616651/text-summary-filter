@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 判定视图生成工具。
+text-summary-filter 判定视图生成工具。
 
 实战来源：make_view.py。
 生成紧凑视图：每行 = L<物理行号>| <首 N 字>…<尾 M 字>；短行原样；空行标 (空行)。
@@ -26,7 +26,7 @@ def read_bytes(path):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 生成紧凑判定视图（L行号|首N…尾M），行号与母本严格一一对应",
+        description="text-summary-filter 生成紧凑判定视图（L行号|首N…尾M），行号与母本严格一一对应",
         epilog="示例： python build_line_view.py --source 母本.txt --out 视图.txt --index 行元数据.json")
     ap.add_argument('--source', required=True, help="母本文件（必填）")
     ap.add_argument('--out', required=True, help="视图输出路径（必填）")

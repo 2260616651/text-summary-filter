@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
-"""doc-extract-filter 端到端编排器：一句话触发 → 一次问清 → 照着跑完整条链。
+"""text-summary-filter 端到端编排器：一句话触发 → 一次问清 → 照着跑完整条链。
 
 设计要点
 --------
@@ -1315,7 +1315,7 @@ def make_report(st: dict) -> str:
         scatter_evidence,
     ]
     card = [
-        "# doc-extract-filter 运行报告", "",
+        "# text-summary-filter 运行报告", "",
         "## 交付摘要卡", "",
         "| 项 | 结果 |", "|---|---|",
         "| 模式 | %s |" % ("仅合并（--screening off）" if screening_off else st["answers"].get("mode", "全流程")),
@@ -1670,7 +1670,7 @@ def cmd_report(a) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    ap = argparse.ArgumentParser(description="doc-extract-filter 端到端编排器（一句话启动 / 断点续跑 / 自动验收）")
+    ap = argparse.ArgumentParser(description="text-summary-filter 端到端编排器（一句话启动 / 断点续跑 / 自动验收）")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("init", help="初始化：固化开场询问包答案与全部路径")

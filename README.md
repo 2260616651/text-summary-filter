@@ -1,4 +1,4 @@
-# doc-extract-filter
+# text-summary-filter
 
 长文档信息提取与总结 Skill（WorkBuddy Skill）。
 
@@ -14,17 +14,17 @@
 
 ## 安装
 
-把整个 `doc-extract-filter/` 目录放到 WorkBuddy 的 Skill 目录：
+把整个 `text-summary-filter/` 目录放到 WorkBuddy 的 Skill 目录：
 
 ```
-~/.workbuddy/skills/doc-extract-filter/
+~/.workbuddy/skills/text-summary-filter/
 ```
 
-即 `SKILL.md` 位于 `~/.workbuddy/skills/doc-extract-filter/SKILL.md`。依赖仅 Python **3.10＋** 标准库（脚本含 PEP 604 联合类型注解，配合 `from __future__ import annotations`），**无第三方包**；已在 Python 3.13 下验证。
+即 `SKILL.md` 位于 `~/.workbuddy/skills/text-summary-filter/SKILL.md`。依赖仅 Python **3.10＋** 标准库（脚本含 PEP 604 联合类型注解，配合 `from __future__ import annotations`），**无第三方包**；已在 Python 3.13 下验证。
 
 ## 快速开始
 
-一句话触发即可，例如「用 doc-extract-filter 总结这份文档」。触发后先由 `route.py` 做意图路由，再由开场询问包**分多回问齐**（问齐即锁定、问完绝不再问），最后由编排器自动编排执行。
+一句话触发即可，例如「用 text-summary-filter 总结这份文档」。触发后先由 `route.py` 做意图路由，再由开场询问包**分多回问齐**（问齐即锁定、问完绝不再问），最后由编排器自动编排执行。
 
 最小可复制命令示例（参数均取自 `init --help`）：
 
@@ -62,6 +62,6 @@ python scripts/smoke_test.py
 ## 协议与署名
 
 - 许可：**AGPL-3.0-only**（GNU Affero General Public License，版本 3）。全文见根目录 `LICENSE`。
-- 版权：`Copyright (c) 2026 doc-extract-filter contributors`。
+- 版权：`Copyright (c) 2026 text-summary-filter contributors`。
 - 要求：**保留署名与许可声明**（`LICENSE` 全文与源文件头 SPDX 标记不得删除）；**修改后须以同协议开源并提供源码**；**允许二次分发**。
 - **允许作为工具用于付费项目的文档总结**：可把本 Skill 及其产出用于付费项目开发，本许可不限制此类使用。

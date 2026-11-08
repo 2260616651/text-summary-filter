@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
-"""doc-extract-filter Skill 一键自检（纯标准库）。
+"""text-summary-filter Skill 一键自检（纯标准库）。
 
 检查项：
   1. 目录与必需文件齐全（SKILL.md / references / scripts / examples）
@@ -39,7 +39,7 @@ import subprocess
 import sys
 
 DEFAULT_SKILL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_MIRROR = os.path.expanduser(r"~\.workbuddy\skills\doc-extract-filter")
+DEFAULT_MIRROR = os.path.expanduser(r"~\.workbuddy\skills\text-summary-filter")
 
 # 全量差集扫描时按「目录名」显式豁免的历史/运行时目录；
 # 非 .md/.py 的运行时产物（如 _user_meta.json、*.pyc）本来就不在扫描范围。
@@ -174,7 +174,7 @@ def selftest_diff_relmaps() -> tuple[bool, str]:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="doc-extract-filter Skill 一键自检")
+    ap = argparse.ArgumentParser(description="text-summary-filter Skill 一键自检")
     ap.add_argument("--skill-dir", default=DEFAULT_SKILL, help="Skill 根目录")
     ap.add_argument("--mirror", default=None,
                     help="第二份副本；显式指定时不存在判 FAIL，未显式指定且默认镜像不存在则判 SKIP")
@@ -386,7 +386,7 @@ def main() -> None:
         check("两副本逐文件一致(全量差集)", ok, " | ".join(parts))
 
     # 输出
-    print("=== doc-extract-filter Skill 自检 ===")
+    print("=== text-summary-filter Skill 自检 ===")
     print("目录:", root)
     for name, status, detail in results:
         print("  [%s] %-28s %s" % (status, name, detail))

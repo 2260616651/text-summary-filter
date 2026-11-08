@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 合并与切块脚本（合成 / 合并代码）
+text-summary-filter 合并与切块脚本（合成 / 合并代码）
 
 职责（对应 Skill「多文档合并总结 + 机械合并/递归重切」）：
   1) 把多份源文档**机械首尾连接**成一份母本（每份前插硬边界标记，仅溯源）
@@ -11,7 +11,7 @@ doc-extract-filter 合并与切块脚本（合成 / 合并代码）
   3) 复用 split_document.py 的等宽 / 重叠 / 不切断行逻辑切块
 
 机械拼接与切块都走这里，保证"24 源硬拼接"和"总总结递归重切"用同一套
-等宽+重叠+不切断行规则，与 doc-extract-filter 标准流程保持一致。
+等宽+重叠+不切断行规则，与 text-summary-filter 标准流程保持一致。
 
 用法：
   # 多源硬拼接 + 切块（24 篇终稿 / 多份缩略档合并母本）
@@ -142,7 +142,7 @@ def _derive_size(text, args):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="doc-extract-filter 合并与切块")
+    ap = argparse.ArgumentParser(description="text-summary-filter 合并与切块")
     ap.add_argument('--inputs', nargs='+', help="多份源文档，机械拼接为母本")
     ap.add_argument('--merged-out', default=None,
                     help="文档集：先把多份源二进制机械拼接成纯母本写到该文件（剥BOM/CRLF归一/绝不改写正文/不插来源标记）")

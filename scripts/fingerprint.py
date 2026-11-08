@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 """
-doc-extract-filter 硬数据指纹工具（抽取 / 集合层零丢失校验）。
+text-summary-filter 硬数据指纹工具（抽取 / 集合层零丢失校验）。
 
 实战来源：build_fingerprint.py（基线生成）+ finalize_filter.py / merge_v9.py（零丢失校验）。
 三类硬数据指纹：
@@ -188,7 +188,7 @@ def compare(baseline, output, exclude_noise):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 硬数据指纹工具：抽取三类硬数据指纹 / 集合层零丢失校验",
+        description="text-summary-filter 硬数据指纹工具：抽取三类硬数据指纹 / 集合层零丢失校验",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=("示例：\n"
                 "  生成基线： python fingerprint.py --source 原文.txt --out 基线.json\n"

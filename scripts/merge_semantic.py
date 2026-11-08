@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright (c) 2026 doc-extract-filter contributors
+# Copyright (c) 2026 text-summary-filter contributors
 # SPDX-License-Identifier: AGPL-3.0-only
-"""doc-extract-filter 第 3 步「条目合并」真语义合并的机械工具（脚本不调模型）。
+"""text-summary-filter 第 3 步「条目合并」真语义合并的机械工具（脚本不调模型）。
 
 三子命令：
   prepare  机械生成「语义相近／描述同类事物」候选簇 + 完整 agent 提示词（只产候选、不裁决）
@@ -522,7 +522,7 @@ def cmd_render(a) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(
-        description="doc-extract-filter 第 3 步「条目合并」语义合并机械工具（脚本不调模型、不裁决语义）")
+        description="text-summary-filter 第 3 步「条目合并」语义合并机械工具（脚本不调模型、不裁决语义）")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("prepare", help="机械生成语义相近/同类事物候选簇 + 完整 agent 提示词（只产候选、不裁决）")
